@@ -18,10 +18,9 @@ import { RouterLink, RouterView } from 'vue-router';
   text-decoration: none;
   font-size: 10px;
   font-weight: 250;
-  padding-right: 10px;
+  padding-right: 15px;
   color:gold;
 }
-
 .menu-item.router-link-active {
   font-weight: 250;
 }
