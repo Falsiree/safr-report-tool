@@ -3,9 +3,9 @@ export function GeneratePrimaryAssessment(form: any) {
   let primaryAssessment = ''
 
   if (form.callType !== '') {
-    primaryAssessment += `Responded to a ${form.callType}`
+    primaryAssessment += `Responded to a/an ${form.callType}`
   } else if (form.location != '') {
-    primaryAssessment += 'Responded to a call for help'
+    primaryAssessment += 'Responded to a/an call for help'
   }
 
   if (form.location != '') {

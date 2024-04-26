@@ -251,7 +251,7 @@ export const StandardComplaints: InjuryOption[] = [{
   },
 ]
 
-export const CallType = [ '911 Call/Text', '10-52', '10-13', '10-13B', '10-78']
+export const CallType = [ '911 Call/Text', '10-52', '10-13', '10-13B', '10-78', 'Other']
 
 export const BurnDegrees = ['First Degree', 'Second Degree', 'Third Degree', 'Forth Degree']
 
