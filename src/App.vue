@@ -16,10 +16,10 @@ import { RouterLink, RouterView } from 'vue-router';
 <style scoped>
 .menu-item {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 300;
   padding-right: 10px;
-  color: gold;
+  color:gold;
 }
 
 .menu-item.router-link-active {
