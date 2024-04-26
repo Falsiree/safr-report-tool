@@ -7,7 +7,6 @@ import { RouterLink, RouterView } from 'vue-router';
     <v-toolbar title="SAFR Report Tool" color="#D90A00">
       <router-link class="menu-item" to="/">Home</router-link>
       <router-link class="menu-item" to="reports">MDT Reports</router-link>
-      <router-link class="menu-item" to="Test Button">Don't Click Button</router-link>
     </v-toolbar>
 
     <RouterView />
@@ -19,11 +18,11 @@ import { RouterLink, RouterView } from 'vue-router';
   text-decoration: none;
   font-size: 17px;
   font-weight: 300;
-  padding-right: 15px;
+  padding-right: 10px;
   color: gold;
 }
 
 .menu-item.router-link-active {
-  font-weight: 600;
+  font-weight: 900;
 }
 </style>
