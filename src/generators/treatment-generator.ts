@@ -34,7 +34,7 @@ export function GenerateTreatment(form: ReportForm) {
     injuries.includes('Stabbing')
   ) {
     treatment +=
-      'Oxygen mask applied securely to the patient. Patients wounds were packed with gauze to stop bleeding. IV saline and TXA administered. Wounds flushed with IV saline, packed with fresh gauze, and wrapped in bandages. Patient was made stable with a C-collar and spine board.'
+      'Oxygen mask applied securely to the patient. Patients wounds were packed with gauze to stop bleeding. IV saline and TXA administered. Wounds flushed with IV saline, packed with fresh gauze, and wrapped in bandages.'
   }
   if (injuries.includes('Animal Attack (Minor)')) {
     treatment += 'Wounds flushed with IV saline and cleaned with antiseptic wipes, packed with fresh gauze, and wrapped in bandages.'

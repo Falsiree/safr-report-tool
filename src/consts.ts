@@ -183,10 +183,6 @@ export const StandardComplaints: InjuryOption[] = [{
       label: 'Flush/Pack/Wrap',
       reportText: 'Wounds flushed with IV saline, packed with fresh gauze, and wrapped in bandages.',
       emote: ''
-    },{
-      label: 'C-Collar',
-      reportText: 'Patient was made stable with a C-collar and spine board.',
-      emote: ''
     }]
   }, {
     injuryName: 'MVA',
