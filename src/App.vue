@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
   <v-app>
-    <v-toolbar title="SAFR Report Tool" color="red">
+    <v-toolbar title="SAFR Report Tool" color="black">
       <router-link class="menu-item" to="/">Home</router-link>
       <router-link class="menu-item" to="reports">MDT Reports</router-link>
       <router-link class="menu-item" to="Test Button">Test Button</router-link>

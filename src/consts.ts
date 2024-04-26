@@ -324,4 +324,4 @@ export const PainMedicationAdministrationOptions = [
   'Patient did not qualify for pain medication'
 ]
 
-export const PainMedicationOptions = ['Ibuprofen', 'Tylenol', 'Tramadol', 'Morphine', 'Narcan']
+export const PainMedicationOptions = ['Ibuprofen', 'Tylenol', 'Tramadol', 'Morphine']
