@@ -16,12 +16,19 @@ import { RouterLink, RouterView } from 'vue-router';
 <style scoped>
 .menu-item {
   text-decoration: none;
-  font-size: 10px;
-  font-weight: 250;
+  font-size: 17.5px;
+  font-weight: 400;
   padding-right: 15px;
   color:gold;
 }
 .menu-item.router-link-active {
   font-weight: 250;
+}
+.menu-v-toolbar.router-link-active {
+  text-decoration: none;
+  font-size: 17.5px;
+  font-weight: 250;
+  padding-right: 15px;
+  color:gold;
 }
 </style>
