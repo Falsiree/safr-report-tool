@@ -150,7 +150,8 @@ export default class ReportsView extends Vue {
   }
   public redirectToYouTube() {
     // Pedro, Pedro, Pedro, Pedro, Pè. Praticamente il meglio di Santa Fè.
-    window.location.href = 'https://youtu.be/F2YpXC1itEE?t=26';
+    const youtubeURL = 'https://youtu.be/F2YpXC1itEE?t=26';
+    window.open(youtubeURL, '_blank');
   }
 }
 </script>
