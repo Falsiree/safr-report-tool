@@ -4,11 +4,10 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
   <v-app>
-    <v-toolbar title="SAFR Report Tool" color="#D90A00">
+    <v-toolbar title="SAFR Reports" color="#D90A00">
       <router-link class="menu-item" to="/">Home</router-link>
       <router-link class="menu-item" to="reports">MDT Reports</router-link>
     </v-toolbar>
-
     <RouterView />
   </v-app>
 </template>
@@ -23,12 +22,5 @@ import { RouterLink, RouterView } from 'vue-router';
 }
 .menu-item.router-link-active {
   font-weight: 250;
-}
-.menu-v-toolbar.router-link-active {
-  text-decoration: none;
-  font-size: 17.5px;
-  font-weight: 250;
-  padding-right: 15px;
-  color:gold;
 }
 </style>

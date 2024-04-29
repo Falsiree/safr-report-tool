@@ -30,6 +30,7 @@ export default class ReportsView extends Vue {
   public dischargeOptions = consts.SafrTreatmentDischargeOptions
   public hospitalOptions = consts.HospitalLocations
   public hospitalStaffOptions = consts.HospitalStaffOptions
+  public redirectToYouTube
 
   public get reports() {
     return reportsStore.reports
@@ -147,11 +148,15 @@ export default class ReportsView extends Vue {
   public closeReport(index: number) {
     reportsStore.closeReport(index)
   }
+  public redirectToYouTube() {
+    // Pedro, Pedro, Pedro, Pedro, Pè. Praticamente il meglio di Santa Fè.
+    window.location.href = 'https://youtu.be/F2YpXC1itEE?t=26';
+  }
 }
 </script>
 
 <template>
-  <v-toolbar color="red">
+  <v-toolbar color="#D90A00">
     <v-tabs v-model="currentIndex">
       <v-tab v-for="(report, index) of reports">
         {{ report.patientIdentifier || `${report.callType} - ${report.location}`  }}
@@ -161,10 +166,10 @@ export default class ReportsView extends Vue {
       </v-tab>
     </v-tabs>
     <v-spacer />
-    <v-btn @click="newReport()">
+    <v-btn @click="newReport()" color ="#FFD700">
       <v-icon>add</v-icon>
     </v-btn>
-    <v-btn @click="copyReport()">
+    <v-btn @click="copyReport()" color ="#FFD700">
       <v-icon>file_copy</v-icon>
     </v-btn>
   </v-toolbar>
@@ -396,12 +401,24 @@ export default class ReportsView extends Vue {
             @click:append="copyAdditionalInfo"
           ></v-textarea>
           <v-divider class="pt-4" />
-          <v-btn color="primary" @click="exportTextFile">Save and Export to Text</v-btn>
-          <v-btn color="red" class="ml-4" @click="resetForm">Reset Form</v-btn>
+          <v-btn color="#008000" @click="exportTextFile">Save Report to Text</v-btn>
+          <v-btn color="#D90A00" class="ml-4" @click="resetForm">Clear Report</v-btn>
+          <v-btn color="teal" class="ml-4" @click="redirectToYouTube">Click for Surprise</v-btn>
         </v-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-<style></style>
+export default {
+  methods: {
+    redirectToYouTube() {
+      // Replace 'YOUR_YOUTUBE_URL' with the actual YouTube URL you want to redirect to
+      window.location.href = 'YOUR_YOUTUBE_URL';
+    }
+  }
+}
+
+<style>
+/* Add your styles here */
+</style>
