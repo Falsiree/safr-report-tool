@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router';
   <v-app>
     <v-toolbar title="SAFR Reports" color="#D90A00">
       <router-link class="menu-item" to="/">Home</router-link>
-      <router-link class="menu-item" to="reports">MDT Reports</router-link>
+      <router-link class="menu-item" to="reports">Reports</router-link>
     </v-toolbar>
     <RouterView />
   </v-app>
