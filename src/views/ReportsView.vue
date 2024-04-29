@@ -403,21 +403,12 @@ export default class ReportsView extends Vue {
           <v-divider class="pt-4" />
           <v-btn color="#008000" @click="exportTextFile">Save Report to Text</v-btn>
           <v-btn color="#D90A00" class="ml-4" @click="resetForm">Clear Report</v-btn>
-          <v-btn color="teal" class="ml-4" @click="redirectToYouTube">Click for Surprise</v-btn>
+          <v-btn color="teal" class="ml-4" @click="redirectToYouTube">Pedro Pedro</v-btn>
         </v-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
-
-export default {
-  methods: {
-    redirectToYouTube() {
-      // Replace 'YOUR_YOUTUBE_URL' with the actual YouTube URL you want to redirect to
-      window.location.href = 'YOUR_YOUTUBE_URL';
-    }
-  }
-}
 
 <style>
 /* Add your styles here */
