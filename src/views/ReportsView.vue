@@ -151,6 +151,7 @@ export default class ReportsView extends Vue {
   public redirectToYouTube() {
     // Pedro, Pedro, Pedro, Pedro, Pè. Praticamente il meglio di Santa Fè.
     const youtubeURL = 'https://youtu.be/F2YpXC1itEE?t=26';
+    window.location.href = "https://youtu.be/F2YpXC1itEE?t=26";
     window.open(youtubeURL, '_blank');
   }
 }
@@ -404,7 +405,9 @@ export default class ReportsView extends Vue {
           <v-divider class="pt-4" />
           <v-btn color="#008000" @click="exportTextFile">Save Report to Text</v-btn>
           <v-btn color="#D90A00" class="ml-4" @click="resetForm">Clear Report</v-btn>
+          <a href="https://youtu.be/F2YpXC1itEE?t=26" target="_blank">
           <v-btn color="teal" class="ml-4" @onclick="redirectToYouTube">Click for Surprise</v-btn>
+        </a>
         </v-card>
       </v-col>
     </v-row>
